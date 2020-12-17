@@ -59,7 +59,7 @@ void growSnake()
   p->next = tail;
   tail = p;
 }
-void createSnake(int n) // n = size of snake
+void createSnake(int n) 
 {
   for (i=0;i<8;i++)
     for (j=0;j<8;j++)
