@@ -45,11 +45,11 @@ void newPoint()
  
   if (scor < 13)
   {
-    growSnake();
+    mananca();
   }
 }
 
-void growSnake()
+void mananca()
 {
   part *p;
   p = (part*)malloc(sizeof(part));
@@ -59,7 +59,7 @@ void growSnake()
   p->next = tail;
   tail = p;
 }
-void createSnake(int n) 
+void creeazaSnake(int n) 
 {
   for (i=0;i<8;i++)
     for (j=0;j<8;j++)
@@ -110,7 +110,7 @@ void reset()
 void start()
 {
   gameover = false;
-  createSnake(3);
+  creeazaSnake(3);
   for(int i= 5;i> 0; i--)
   {
     lcd.setCursor(7,0);
